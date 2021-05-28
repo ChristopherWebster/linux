@@ -3,6 +3,7 @@
 #Init local vars
 RET=0
 L_BASE_PATH=./
+#initialise OPTIND - not reset on multiple calls in all Linux versions
 OPTIND=1
 
 #functions
@@ -13,24 +14,24 @@ usage()
 }
 #############################################################
 loadArgs()
-{ 
+{
 	while getopts ":p:h" args; do
-		case $args in 
-			p)	
-                L_BASE_PATH=${OPTARG}
+		case $args in
+			p)
+        L_BASE_PATH=${OPTARG}
 				;;
 
-			h)  
-                usage
-                ;;
+			h)
+        usage
+        ;;
 
-            \?)  
-                echo "Error: incorrect parameter provided"
-                #usage
-                usage >&2
-                exit 1
-                ;;
-        esac             
+      \?)
+      	echo "Error: incorrect parameter provided"
+        #usage
+        usage >&2
+        exit 1
+        ;;
+    esac
 	done
 	shift $((OPTIND-1))
 }
@@ -44,7 +45,7 @@ loadArgs()
 # Main
 ###################################################################
 {
-    echo "calling loadArgs"
+  echo "calling loadArgs"
 	loadArgs "$@"
 	echo "echoing output"
 	echo "base bath is [ $L_BASE_PATH ]"
