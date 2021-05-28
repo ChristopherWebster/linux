@@ -1,4 +1,4 @@
-# linux
+# Linux Scripts
 
 A Simple Shell Script that accepts Arguments and Flags.
 
