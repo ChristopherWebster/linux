@@ -49,3 +49,17 @@ The following examples are shown as given to the shell:
              Find files and directories that are at least seven levels deep in the working directory /usr/src.
      find /usr/src -name CVS -prune -o -mindepth 7 -print
              Is not equivalent to the previous example, since -prune is not evaluated below level seven.
+
+#flow control  -if statement
+
+#!/bin/bash
+count=99
+if [ $count -eq 100 ]
+then
+  echo "Count is 100"
+elif [ $count -gt 100 ]
+then
+  echo "Count is greater than 100"
+else
+  echo "Count is less than 100"
+fi
