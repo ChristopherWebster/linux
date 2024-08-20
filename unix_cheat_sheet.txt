@@ -63,3 +63,13 @@ then
 else
   echo "Count is less than 100"
 fi
+
+# Check a folder exists
+
+if [ -d "path/to/folder" ]
+then
+   #do something here
+else 
+   #do another thing here
+fi
+
