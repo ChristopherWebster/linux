@@ -53,6 +53,39 @@ The following examples are shown as given to the shell:
      find /usr/src -name CVS -prune -o -mindepth 7 -print
              Is not equivalent to the previous example, since -prune is not evaluated below level seven.
 
+xargs  - batch up arguments and runs a command 
+
+[ = test - man test
+NAME
+     test, [ – condition evaluation utility
+
+SYNOPSIS
+     test expression
+     [ expression ]
+
+DESCRIPTION
+     The test utility evaluates the expression and, if it evaluates to true, returns a zero (true) exit status; otherwise it returns 1 (false).  If there is no expression,
+     test also returns 1 (false).
+
+     All operators and flags are separate arguments to the test utility.
+
+     The following primaries are used to construct expression:
+
+     -b file       True if file exists and is a block special file.
+
+     -c file       True if file exists and is a character special file.
+
+     -d file       True if file exists and is a directory.
+     ...
+EXIT STATUS
+     The test utility exits with one of the following values:
+
+     0       expression evaluated to true.
+
+     1       expression evaluated to false or expression was missing.
+
+     >1      An error occurred.
+
 
 
 #flow control  -if statement
