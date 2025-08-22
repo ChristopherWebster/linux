@@ -72,18 +72,16 @@ DESCRIPTION
      The following primaries are used to construct expression:
 
      -b file       True if file exists and is a block special file.
-
      -c file       True if file exists and is a character special file.
-
      -d file       True if file exists and is a directory.
+     -e file       True if file exists (regardless of type).
+     -f file       True if file exists and is a regular file.
      ...
 EXIT STATUS
      The test utility exits with one of the following values:
 
      0       expression evaluated to true.
-
      1       expression evaluated to false or expression was missing.
-
      >1      An error occurred.
 
 
