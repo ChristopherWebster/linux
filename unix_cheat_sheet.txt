@@ -30,6 +30,9 @@ grep 'my text' filename.txt
 
 find / -name "filename.txt" 2>/dev/null
 
+Find all files belonging to chriswebster ending with '.java'
+find . -name "*.java" -user chriswebster -print 2>/dev/null | grep 'DemoApplicationTests'
+
 The following examples are shown as given to the shell:
      find / \! -name "*.c" -print
              Print out a list of all the files whose names do not end in .c.
@@ -49,6 +52,8 @@ The following examples are shown as given to the shell:
              Find files and directories that are at least seven levels deep in the working directory /usr/src.
      find /usr/src -name CVS -prune -o -mindepth 7 -print
              Is not equivalent to the previous example, since -prune is not evaluated below level seven.
+
+
 
 #flow control  -if statement
 
