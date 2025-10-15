@@ -1,3 +1,29 @@
+####################################################################################################
+# Unix cheat sheet with a specialisation in MacOS X bash scripting  
+# -- accumulation over many years, recently committed to GitHub for my own use
+# -- feel free to fork 
+#
+#
+#
+####################################################################################################
+
+# Get the process ID for a running port, incase one doesn't have the PID or a terminal open. 
+$ lsof -i tcp:8080
+
+# output looks like this :
+> chriswebster@Chriss-Laptop ~ % lsof -i tcp:8080
+> COMMAND   PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+> java    86601 chriswebster  148u  IPv6 0xabd88acc5ec524d2      0t0  TCP *:http-alt (LISTEN)
+# PID can be easily identified in this command
+
+# alternatively  
+netstat -vanp tcp | grep 8080
+# output looks like this :
+> chriswebster@Chriss-Laptop ~ % netstat -vanp tcp | grep 8080
+> tcp6       0      0  fe80::d6d4:500b:.1024  fe80::a5d9:853a:.1024  ESTABLISHED         3476         2259  131072  132108    980      0 00102 00000204 0000000008f268d5 00100001 04080800      2      0 000000
+
+# PID not so easily identifiable in the above netstat output 
+
 grep 'my text' filename.txt
    -   Find all occurrences of the pattern ‘patricia’ in a file:
                $ grep 'patricia' myfile
