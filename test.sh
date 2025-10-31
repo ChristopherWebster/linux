@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+#  My basic shell script template
+#
+
 #formatting:
 # Reset
 Colour_Off='\033[0m'       # Text Reset
@@ -100,7 +104,7 @@ echo "Starting script..."
 	#false  
 	#ls /nonexistent_file
 	#invalid_command
-        ###################################################################
+    ###################################################################
 	
 echo "Script finished."
 
