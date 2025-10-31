@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# I love this C style for loop in bash
+# credit : Dave Eddy ysap.sh
 
 #declares
 max=4
