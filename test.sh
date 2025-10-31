@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-#  My basic shell script template
+#  My basic shell script template. 
+#  C. Webster 31 October 2025
 #
 
 #formatting:
