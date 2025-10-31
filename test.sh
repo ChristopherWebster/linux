@@ -1,7 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 #  My basic shell script template. 
 #  C. Webster 31 October 2025
+#  Creadit Dave Eddy ysap.com for the user env reference using the users bash shell rather than 
+#  hard coded bash. This has advantages in system executed shell scripts where the system user 
+#  running the script uses a particular shell.
+#
 #
 
 #formatting:
