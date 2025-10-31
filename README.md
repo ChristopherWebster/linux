@@ -2,7 +2,8 @@
 
 ## A collection of unix Shell Script templates to build from and showing good/not so good techniques.
 
-Thess projects are my goto starting points for writing shell scripts.\
+Thess projects are my go-to starting points for writing shell scripts.\
+```for-loop.sh```      C-Style for loops ```(i=0; i<$max; i++)```\
 ```progressbar.sh```   following Dave Eddy's [ysap.com](https://ysap.sh/)   tutorial. very useful\
 ```test.sh```          my basic shell script template for running scripts on a prod server\
 ```testscript.sh```    another version of my basic shell script template for buidling prod scripts\
