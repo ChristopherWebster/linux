@@ -7,8 +7,29 @@
 #
 ####################################################################################################
 
+#
+git rebase -i HEAD~n
+
+# follow log file output
+tail -f /path/to/logfile.log
+
+# last 100 lines of logfile.log
+tail -100 /path/to/logfile.log
+
+#recursive search for text in files
+rg "your_pattern" /path/to/directory
+
 # Get the process ID for a running port, incase one doesn't have the PID or a terminal open. 
 $ lsof -i tcp:8080
+
+# Terminate the process currently running on port 3000
+$ kill $(lsof -t -i :3000)
+
+# add to a current path
+$ echo "export PATH=$PATH;/new/app/path" >> ~/.bashrc
+
+# Display bash command history with usage counts, showing which commands are most frequently used
+$ cat ~/.zsh_history|awk '{print $1}'|sort|uniq -c|sort -n|less
 
 # output looks like this :
 > chriswebster@Chriss-Laptop ~ % lsof -i tcp:8080
